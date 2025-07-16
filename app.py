@@ -5,7 +5,7 @@ import os
 
 # Streamlit page configuration
 st.set_page_config(
-    page_title="Danmay International Academy",
+    page_title="Educational chatbot",
     page_icon="🏫",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -96,7 +96,7 @@ def load_logo():
 
 # School logo and header
 def render_header():
-    logo = load_logo()
+#    logo = load_logo()
     st.markdown('<div class="header-container">', unsafe_allow_html=True)
     
     if logo:
@@ -105,7 +105,7 @@ def render_header():
         st.markdown("🏫", unsafe_allow_html=True)
     
     st.markdown("""
-        <h1 style="color: #2E86AB;">Danmay International Academy</h1>
+        <h1 style="color: #2E86AB;">Educational chatbot</h1>
         <p style="color: #555555;">Excellence in Education from Creche to Secondary</p>
         </div>
     """, unsafe_allow_html=True)
@@ -177,8 +177,8 @@ if not st.session_state.user_info:
     st.markdown("""
     <div class="info-card">
         <p>📧 danmayinternational.com.ng</p>
-        <p>📞 08038965253</p>
-        <p>📞 09051906862</p>
+        <p>📞 +234...........</p>
+        <p>📞 +234000000000000</p>
         <p>🏠 Opposite UDSS, Camp David Street, Aluu</p>
     </div>
     """, unsafe_allow_html=True)
